@@ -35,6 +35,13 @@ function App() {
     }));
   };
 
+  const completeTasks = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+      done: true,
+    })));
+  };
+
   return (
     <Container className="container">
       <Header />
@@ -57,6 +64,7 @@ function App() {
             tasks={tasks}
             hideTasks={hideTasks}
             toggleHideTasks={toggleHideTasks}
+            completeTasks={completeTasks}
           />
         }
       />
