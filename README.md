@@ -1,4 +1,4 @@
-# #04 Tasks list ( +React.js )
+# #04 Tasks list ( + React.js )
 
 A simple web app to manage your to-do list.
 
