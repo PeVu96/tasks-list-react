@@ -6,13 +6,15 @@ import Header from "./Header";
 import Container from "./Container";
 import { useState } from "react";
 
+const defaultTasks = [
+  { id: 1, content: "przejść na Reacta", done: false },
+  { id: 2, content: "zjeść obiad", done: true },
+];
+
 function App() {
   const [hideTasks, setHideTasks] = useState(false);
 
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przejść na Reacta", done: false },
-    { id: 2, content: "zjeść obiad", done: true },
-  ]);
+  const [tasks, setTasks] = useState(defaultTasks);
 
   const toggleHideTasks = () => {
     setHideTasks(hideTasks => !hideTasks);
